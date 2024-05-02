@@ -1,0 +1,31 @@
+- **Partial View Purpose**: Define reusable content, callable from any view.
+- **Implementation**: 
+  - Create partial views in the "Shared" folder.
+  - Use tag helpers or HTML helpers to invoke them.
+- **Setup**:
+  - Create ASP.NET Core empty application.
+  - Add controllers, views, and routing.
+  - Enable static files.
+- **CSS Styling**:
+  - Place `styles.css` in the "wwwroot" folder.
+- **Controller Setup**:
+  - Create Home controller with `index` and `about` action methods.
+- **View Creation**:
+  - Generate views for both actions.
+- **Layout View**:
+  - Create `_Layout.cshtml` in the "Shared" folder.
+  - Include CSS file, define container, navigation bar.
+- **Partial View Creation**:
+  - Create reusable content in partial view.
+  - Place in "Shared" folder prefixed with underscore.
+- **Invoking Partial View**:
+  - Use `partial` tag helper or `Html.PartialAsync`.
+  - Optionally apply CSS classes or wrap in tags.
+- **Importing Tag Helpers**:
+  - Ensure tag helpers are imported in `_ViewImports.cshtml`.
+- **Comparison**:
+  - Partial Tag Helper vs. `PartialAsync` vs. `RenderPartialAsync`.
+  - Partial helpers return HTML content, `RenderPartialAsync` streams content directly to browser.
+- **Further Study**:
+  - Sharing ViewData/ViewBag, strongly-typed partial views, invoking from controller action methods.
+Summarized by https://chrome.google.com/webstore/detail/cbgecfllfhmmnknmamkejadjmnmpfjmp
